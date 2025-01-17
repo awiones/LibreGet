@@ -10,6 +10,7 @@
   <a href="https://github.com/awiones/LibreGet/blob/master/LICENSE"><img src="https://img.shields.io/github/license/awiones/LibreGet?label=License"></a>
   <a href="https://github.com/awiones/LibreGet/stargazers"><img src="https://img.shields.io/github/stars/awiones/LibreGet?label=Stars"></a>
   <a href="https://github.com/awiones/LibreGet/network/members"><img src="https://img.shields.io/github/forks/awiones/LibreGet?label=Forks"></a>
+    <a href="https://awiones.github.io/LibreGet/"><img src="https://img.shields.io/badge/Website-Here-brightgreen.svg?style=flat"></a>
 </p>
 
 ## Overview
