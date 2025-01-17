@@ -2,7 +2,7 @@
 
 <div align="center">
   <br>
-  <img src="assets\images\logo.png" alt="LibreGet" width="400px;">
+  <img src="assets/images/logo.png" alt="libreget" width="400px;">
 </div>
 
 <p align="center">
