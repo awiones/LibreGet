@@ -3,6 +3,12 @@
 **LibreGet: A Free and Open-Source Download Manager**
 =====================================================
 
+[![LibreGet Logo](https://raw.githubusercontent.com/LibreGet/assets/images/logo.png)]
+
+[![Build Status](https://img.shields.io/github/workflow/status/LibreGet/LibreGet/CI?label=Build%20Status)](https://github.com/LibreGet/LibreGet/actions)
+[![License](https://img.shields.io/github/license/LibreGet/LibreGet?label=License)](https://github.com/LibreGet/LibreGet/blob/master/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/LibreGet/LibreGet?label=Stars)](https://github.com/LibreGet/LibreGet/stargazers)
+
 **Overview**
 ------------
 
