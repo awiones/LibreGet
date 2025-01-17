@@ -2,7 +2,7 @@
 
 <div align="center">
   <br>
-  <img src="assets/images/logo.png" alt="libreget" width="400px;">
+  <img src="https://github.com/awiones/LibreGet/blob/main/libreget/assets/images/logo.png" alt="libreget" width="400px;">
 </div>
 
 <p align="center">
