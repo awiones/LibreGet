@@ -1,0 +1,321 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --background-light: #f8fafc;
+    --text-color: #1f2937;
+    --text-light: #6b7280;
+    --white: #ffffff;
+    --border-color: #e5e7eb;
+    --gradient-start: #2563eb;
+    --gradient-end: #1e40af;
+}
+
+/* Global Resets */
+.support-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+/* Support Hero Section */
+.support-hero {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--white);
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.support-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* Donation Methods */
+.donation-methods {
+    margin-bottom: 4rem;
+}
+
+.donation-methods h2,
+.impact-breakdown h2,
+.financial-transparency h2,
+.supporter-recognition h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.donation-card {
+    background: var(--background-light);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.donation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.donation-card-header {
+    margin-bottom: 1.5rem;
+}
+
+.donation-card-header i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.donation-amounts {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.amount-btn {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.amount-btn.selected,
+.amount-btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.donate-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.donate-btn:hover {
+    background: var(--secondary-color);
+}
+
+
+
+/* Crypto Addresses */
+.crypto-addresses {
+    margin-bottom: 1rem;
+}
+
+.crypto-option {
+    background: rgba(0,0,0,0.05);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: copy;
+}
+
+.crypto-option i {
+    color: var(--primary-color);
+}
+
+.crypto-option code {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Impact Breakdown */
+.impact-breakdown {
+    margin-bottom: 4rem;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.impact-card {
+    background: var(--background-light);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.impact-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    background: rgba(0,0,0,0.1);
+    height: 10px;
+    border-radius: 5px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.progress {
+    background: var(--primary-color);
+    height: 100%;
+}
+
+.progress-label {
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+/* Financial Transparency */
+.financial-transparency {
+    margin-bottom: 4rem;
+}
+
+.transparency-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.transparency-chart {
+    flex: 1;
+}
+
+.transparency-details {
+    flex: 1;
+}
+
+.transparency-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transparency-details li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: var(--background-light);
+    border-radius: 0.5rem;
+}
+
+.transparency-details .percentage {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Supporter Recognition */
+.supporter-recognition {
+    margin-bottom: 4rem;
+}
+
+.supporter-tiers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tier h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.supporters-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Final CTA */
+.final-cta {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+}
+
+.final-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+     background: var(--primary-color);
+    color: var(--white);
+}
+
+.cta-btn.primary:hover {
+    background: var(--secondary-color);
+}
+
+.cta-btn.secondary {
+    background: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.cta-btn.secondary:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}

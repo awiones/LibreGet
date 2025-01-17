@@ -1,0 +1,256 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --background-light: #f8fafc;
+    --text-color: #1f2937;
+    --text-light: #6b7280;
+    --border-color: #e5e7eb;
+    --white: #ffffff;
+    --transition-speed: 0.3s;
+    --border-radius: 0.75rem;
+}
+
+/* Improved Reset and Base Styles */
+.faq-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: var(--white);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* FAQ Header with Modern Design */
+.faq-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.faq-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.faq-header-content h1 {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.faq-header-content p {
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+/* FAQ Categories with Enhanced Layout */
+.faq-categories {
+    display: grid;
+    gap: 3rem;
+}
+
+.faq-category {
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-speed) ease;
+}
+
+.faq-category:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.faq-category h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--primary-color);
+    position: relative;
+}
+
+/* FAQ Item with Improved Interaction */
+.faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    transition: background-color var(--transition-speed) ease;
+}
+
+.faq-toggle {
+    display: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-question::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    transition: width var(--transition-speed) ease;
+}
+
+.faq-question:hover::before {
+    width: 100%;
+}
+
+.faq-question span {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    transition: color var(--transition-speed) ease;
+}
+
+.faq-question:hover span {
+    color: var(--primary-color);
+}
+
+.faq-question i {
+    color: var(--primary-color);
+    transition: transform var(--transition-speed) ease;
+}
+
+.faq-toggle:checked + .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-speed) ease, 
+                padding var(--transition-speed) ease;
+    background-color: var(--white);
+    padding: 0 1rem;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+    max-height: 1000px;
+    padding: 1rem;
+}
+
+.faq-answer p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.faq-answer ul {
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.faq-answer ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.faq-answer ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: -1.25rem;
+    font-weight: bold;
+}
+
+/* Community Support Section with Modern Design */
+.community-support {
+    margin-top: 4rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.community-support::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at center, 
+        rgba(255, 255, 255, 0.1) 0%, 
+        transparent 70%
+    );
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.support-content {
+    position: relative;
+    z-index: 10;
+}
+
+.community-support h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.community-support p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.support-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.support-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--white);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.support-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0. 1);
+}
+
+.support-btn i {
+    color: var(--primary-color);
+}
